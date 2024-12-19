@@ -1,0 +1,71 @@
+.home-student {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+}
+
+.lesson-card {
+    position: relative; /* Для размещения замка поверх карточки */
+    flex: 0 1 300px; /* Карточки адаптируются до 300px */
+    height: 270px;
+    background: #2f2f2f;
+    color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.5s ease, color 0.5s ease;
+    text-decoration: none;
+}
+
+.lesson-card:hover {
+    transform: scale(1.1);
+    background: #2e2c2c;
+}
+
+.lesson-card.locked {
+    opacity: 0.9; /* Уменьшенная видимость для заблокированных карточек */
+    pointer-events: none; /* Делаем их некликабельными */
+    cursor: not-allowed; /* Меняем курсор на запретный */
+}
+
+.lesson-card.locked .lock-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #ff8bd8;
+}
+
+/* Контейнер и заголовки */
+.lessons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.title {
+    font-size: 2.8vw;
+    text-align: center;
+    margin-top: 10rem;
+    margin-bottom: 4rem;
+    font-weight: 650;
+    color: #ffffff;
+}
+
+.lesson-card h3 {
+    margin-top: 5rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+.lesson-card p {
+    font-size: 1rem;
+    color: #aaa;
+}

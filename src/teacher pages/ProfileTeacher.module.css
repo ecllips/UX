@@ -1,0 +1,115 @@
+.profileTeacher {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.profileContainer {
+    width: 97%; /* Контейнер во всю ширину */
+    background: #2f2f2f;
+    color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.userSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.avatar {
+    font-size: 3.5rem;
+    background: #4d4d4d;
+    color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.choosePhoto {
+    font-size: 1rem;
+    color: #bbb;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.choosePhoto:hover {
+    color: #ff8bd8;
+}
+
+.userInfo {
+    text-align: center;
+}
+
+.userName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.userRole {
+    font-size: 1rem;
+    color: #ff8bd8;
+    margin-top: 0.5rem;
+}
+
+.infoSection {
+    width: 100%; /* Растягиваем секцию на всю ширину */
+}
+
+.infoTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff8bd8;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.infoContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.infoContent a {
+    text-decoration: none;
+    background: #4d4d4d;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.infoContent a:hover {
+    background: #ff8bd8;
+    color: white;
+}
+
+.logoutButton {
+    background: #ff8bd8;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.logoutButton:hover {
+    background: #f77acb;
+}

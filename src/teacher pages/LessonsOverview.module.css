@@ -1,0 +1,71 @@
+.lessonsOverview {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(180deg, #ff8bd8, #ffabc2);
+}
+
+.title {
+    margin-top: 2rem;
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.lessonsContainer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 90%;
+    margin-top: 2rem;
+}
+
+.lessonCard {
+    position: relative; /* Для размещения замка */
+    flex: 0 1 300px;
+    height: 180px;
+    background: #2f2f2f;
+    color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.lessonCard:hover {
+    transform: scale(1.05);
+    background: #3f3f3f;
+}
+
+.lessonCard h3 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.lessonCard p {
+    font-size: 1rem;
+    color: #bbb;
+    margin-top: 0.5rem;
+}
+
+.lessonCard.locked {
+    opacity: 0.9; /* Уменьшенная видимость */
+    pointer-events: none; /* Некликабельные карточки */
+    cursor: not-allowed;
+}
+
+.lessonCard.locked .lockIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+    color: #ff8bd8;
+}

@@ -1,0 +1,95 @@
+.lessonStudent {
+    min-height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.content {
+    width: 97%;
+    background: #2f2f2f;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 2rem;
+}
+
+.taskTitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.taskDetails h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.section {
+    margin-bottom: 0.5rem;
+}
+
+.section h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.section p, .section ul {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.section ul {
+    padding-left: 1.5rem;
+}
+
+.section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.fileUpload {
+    margin-top: 2rem;
+    display: flex; /* Располагаем элементы в строку */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: flex-start; /* Выравниваем элементы по правому краю */
+    gap: 2rem; /* Расстояние между кнопкой, оценкой и иконкой */
+}
+
+.uploadButton {
+    background: #ff8bd8;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.infoSection {
+    display: flex; /* Располагаем оценку и иконку в строку */
+    align-items: center; /* Центрируем элементы по вертикали */
+    gap: 2rem; /* Расстояние между оценкой и иконкой */
+}
+
+.grade {
+    font-size: 1.2rem;
+    color: white;
+}
+
+.commentIcon {
+    font-size: 1.7rem;
+    color: #5e5b5b;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.commentIcon:hover {
+    color: #ff8bd8;
+}
+
+
+
+

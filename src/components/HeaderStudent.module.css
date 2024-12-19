@@ -1,0 +1,86 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2f2f2f;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    width: 95vw;
+    margin: 1rem auto;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.2); /* Увеличиваем размер на 20% */
+    color: #ff8bd8; /* Можно также изменить цвет при наведении */
+}
+
+.userContainer {
+    position: relative;
+    cursor: pointer;
+}
+
+.userName {
+    font-size: 1.4rem;
+    color: #ffffff;
+    transition: transform 0.5s ease, color 0.5s ease;
+}
+
+.userName:hover {
+    transform: scale(1.2);
+    color: #ff8bd8;
+}
+
+.userName.active {
+    color: #ff8bd8; /* Новый цвет при активации меню */
+}
+
+.dropdownMenu {
+    position: absolute;
+    top: 120%; /* Чуть ниже имени пользователя */
+    right: 0;
+    background: rgba(47, 47, 47, 0.9);
+    color: #fff;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 180px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Сначала скрыто */
+    transform: translateY(-10px); /* Смещение вверх */
+    visibility: hidden; /* Меню не видно */
+    transition: all 0.4s ease; /* Плавное появление */
+    z-index: 10;
+}
+
+.dropdownMenu.showMenu {
+    opacity: 1; /* Показываем меню */
+    transform: translateY(0); /* Возвращаем на место */
+    visibility: visible;
+}
+
+.dropdownMenu p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    transition: color 0.4s ease;
+}
+
+.dropdownMenu p:hover {
+    color: #ff8bd8; /* Цвет при наведении */
+}
+
+.dropdownMenu a {
+    text-decoration: none; /* Убираем стандартное подчеркивание */
+    color: inherit; /* Наследуем цвет текста */
+}
